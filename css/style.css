@@ -104,15 +104,23 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+._ibg {
+  position: relative;
+}
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
 .button {
-  display: flex;
-  align-items: center;
+  display: inline-block;
   text-align: center;
-  justify-content: center;
   border-radius: 8px;
   background-color: #64a745;
   box-shadow: 10px 5px 35px 0px rgba(96, 155, 68, 0.72);
-  padding: 13.5px 57px;
   color: #fff;
   font-family: "Montserrat";
   font-size: 14px;
@@ -129,14 +137,17 @@ body {
 .page {
   flex: 1 1 auto;
 }
+.page__main {
+}
 /* ================================================================================ */
 /* ======================================== Header ======================================== */
 .header {
-  /* position: absolute;
+  position: absolute;
   width: 100%;
   top: 0;
-  left: 0; */
+  left: 0;
   background-color: #fff;
+  z-index: 50;
 }
 .header__container {
   min-height: 97px;
@@ -175,6 +186,7 @@ body {
 .header__dropdown {
 }
 .header__button {
+  padding: 13.5px 57px;
 }
 .dropbtn {
   padding: 11px;
@@ -270,20 +282,106 @@ body {
     width: 100%;
   }
   .dropdown {
+  }
+  .header__logo {
+    justify-content: center;
+  }
+  .header__container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .header__button {
     display: none;
   }
   .header__container {
     min-height: 70px;
   }
-}
-@media (max-width: 450px) {
   .header__logo {
     flex: 0 0 33px;
     width: 33px;
     overflow: hidden;
   }
+}
+@media (max-width: 450px) {
   .header__button {
     padding: 13px 25px;
   }
+}
+/* ================================================================================ */
+/* ======================================== Main ======================================== */
+.main {
+  position: relative;
+  min-height: 100vh;
+}
+.main__container {
+  position: relative;
+  z-index: 45;
+  padding-top: 306px;
+  padding-bottom: 206px;
+}
+.main__title {
+  background-image: url(/img/main/txt-bg.jpg);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 85px;
+  font-weight: 900;
+  margin: 0px 0px 13px 0px;
+}
+.main__subtitle {
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 121.4%; /* 48.56px */
+  text-transform: uppercase;
+  margin: 0px 0px 13px 0px;
+}
+.main__text {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 121.4%; /* 24.28px */
+  margin: 0px 0px 50px 0px;
+  max-width: 575px;
+}
+.main__items {
+}
+.main__items:not(:last-child) {
+  margin: 0px 0px 46px 0px;
+}
+.main__item {
+  display: flex;
+  align-items: center;
+  color: #222;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 132.9%; /* 26.58px */
+  max-width: 394px;
+}
+.main__item:before {
+  content: url(/img/main/recycle.svg);
+  padding-right: 16px;
+}
+.main__item:not(:last-child) {
+  margin: 0px 0px 27px 0px;
+}
+
+.main__button {
+  padding: 24px 36px;
+}
+
+.main__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 1;
+  margin: 0px 0px 0px 0px;
+}
+.main__bg img {
 }
 /* ================================================================================ */
