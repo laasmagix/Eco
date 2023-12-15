@@ -141,6 +141,8 @@ body {
 }
 .page__service {
 }
+.page__advantages {
+}
 /* ================================================================================ */
 /* ======================================== Header ======================================== */
 .header {
@@ -575,6 +577,102 @@ body {
   .service__title {
     font-size: 35px;
     margin: 0px 0px 25px 0px;
+  }
+}
+/* ================================================================================ */
+/* ======================================== Advantages ======================================== */
+.advantages {
+}
+.advantages__row {
+  display: flex;
+}
+.advantages__top {
+  text-align: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #68ac4e;
+  flex: 0 1 50%;
+  padding: 144px 330px;
+}
+.advantages__title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 138.9%; /* 69.45px */
+  text-transform: uppercase;
+  /* max-width: 299px; */
+  /* padding: 144px 330px; */
+}
+.advantages__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 50%;
+}
+.advantages__text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 156.4%; /* 25.024px */
+  max-width: 479px;
+  padding: 30px;
+}
+@media (max-width: 1330px) {
+  .advantages__top {
+    flex: 0 1 30%;
+    padding: 144px 230px;
+  }
+  .advantages__bottom {
+    flex: 0 1 70%;
+  }
+}
+@media (max-width: 1150px) {
+  .advantages__row {
+    flex-wrap: wrap;
+  }
+  .advantages__top {
+    flex: 1 1 auto;
+    padding: 100px 130px;
+  }
+  .advantages__text {
+    max-width: none;
+  }
+  .advantages__bottom {
+    flex: 1 1 auto;
+  }
+  .advantages__title {
+    max-width: none;
+  }
+  .advantages__text {
+    max-width: none;
+  }
+}
+@media (max-width: 992.98px) {
+  .advantages__top {
+    padding: 80px 15px;
+  }
+}
+@media (max-width: 767.98px) {
+  .advantages__title {
+    font-size: 45px;
+  }
+}
+@media (max-width: 620px) {
+  .advantages__title {
+    font-size: 36px;
+  }
+  .advantages__top {
+    padding: 60px 15px;
+  }
+}
+@media (max-width: 470.98px) {
+  .advantages__title {
+    font-size: 30px;
   }
 }
 /* ================================================================================ */
