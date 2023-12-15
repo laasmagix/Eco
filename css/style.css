@@ -143,6 +143,8 @@ body {
 }
 .page__advantages {
 }
+.page__how {
+}
 /* ================================================================================ */
 /* ======================================== Header ======================================== */
 .header {
@@ -673,6 +675,154 @@ body {
 @media (max-width: 470.98px) {
   .advantages__title {
     font-size: 30px;
+  }
+}
+/* ================================================================================ */
+/* ======================================== How ======================================== */
+.how {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.how__container {
+}
+.how__title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 138.9%; /* 69.45px */
+  text-transform: uppercase;
+  margin: 0px 0px 135px 0px;
+}
+.how__top {
+}
+.top-how {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 67px;
+  margin: 0px 0px 105px 0px;
+}
+.top-how__item {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-items: center;
+  max-width: 382px;
+}
+.top-how__icon {
+  padding: 19px;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0px 4px 10px 0px rgba(178, 186, 207, 0.38);
+}
+.top-how__text {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 121.4%; /* 24.28px */
+  max-width: 264px;
+}
+.how__bottom {
+}
+.bottom-how {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 38px;
+  margin: 0px 0px 86px 0px;
+}
+.bottom-how__item {
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0px 4px 10px 0px rgba(178, 186, 207, 0.38);
+  max-width: 619px;
+  padding: 38px 82px 38px 82px;
+}
+.bottom-how__title {
+  font-size: 18px;
+  line-height: 138.9%; /* 25.002px */
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0px 0px 25px 0px;
+}
+.bottom-how__text {
+  text-align: center;
+  font-weight: 500;
+  line-height: 147.9%; /* 23.664px */
+}
+.how__button {
+  display: flex;
+  justify-content: center;
+}
+.how__btn {
+  padding: 25px;
+}
+@media (max-width: 992.98px) {
+  .how {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .how__title {
+    margin: 0px 0px 100px 0px;
+  }
+  .top-how {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    margin: 0px 0px 60px 0px;
+  }
+  .bottom-how__title {
+    margin: 0px 0px 15px 0px;
+  }
+  .bottom-how__item {
+    padding: 38px 60px 38px 60px;
+  }
+  .bottom-how {
+    margin: 0px 0px 60px 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .how {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .how__title {
+    margin: 0px 0px 80px 0px;
+  }
+  .bottom-how {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin: 0px 0px 40px 0px;
+  }
+  .bottom-how__item {
+    max-width: none;
+  }
+}
+@media (max-width: 620px) {
+  .how__title {
+    font-size: 36px;
+    margin: 0px 0px 60px 0px;
+  }
+  .top-how {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    justify-items: center;
+    margin: 0px 0px 40px 0px;
+  }
+}
+@media (max-width: 470.98px) {
+  .how {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .how__title {
+    margin: 0px 0px 30px 0px;
+  }
+  .top-how__text {
+    font-size: 17px;
+  }
+  .bottom-how__item {
+    padding: 38px;
   }
 }
 /* ================================================================================ */
