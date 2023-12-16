@@ -145,6 +145,8 @@ body {
 }
 .page__how {
 }
+.page__reviews {
+}
 /* ================================================================================ */
 /* ======================================== Header ======================================== */
 .header {
@@ -825,4 +827,101 @@ body {
     padding: 38px;
   }
 }
+/* ================================================================================ */
+/* ======================================== Reviews ======================================== */
+.reviews {
+  padding-top: 98px;
+  padding-bottom: 98px;
+}
+.reviews__title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 138.9%; /* 69.45px */
+  text-transform: uppercase;
+  margin: 0px 0px 70px 0px;
+}
+.reviews__items {
+}
+.reviews__row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  overflow: hidden;
+  animation: none;
+}
+.reviews__item {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  max-width: 567px;
+}
+.item-reviews {
+}
+.item-reviews__icon {
+}
+.item-reviews__body {
+}
+.item-reviews__title {
+  line-height: 147.9%; /* 23.664px */
+  margin: 0px 0px 7px 0px;
+}
+.item-reviews__text {
+  font-weight: 500;
+  line-height: 147.9%; /* 23.664px */
+  max-width: 420px;
+}
+.item-reviews__more {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: #68ac4e;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 147.9%; /* 26.622px */
+}
+.item-reviews__more:hover {
+  text-decoration-line: underline;
+}
+@media (max-width: 1330px) {
+  .reviews__row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 992.98px) {
+    .reviews {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    .item-reviews__text {
+      max-width: none;
+    }
+  }
+}
+@media (max-width: 825px) {
+  .reviews__row {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    gap: 50px;
+  }
+}
+@media (max-width: 767.98px) {
+  .reviews {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .reviews__title {
+    font-size: 45px;
+    margin: 0px 0px 50px 0px;
+  }
+}
+@media (max-width: 620px) {
+  .reviews__item {
+    flex-direction: column;
+    gap: 22px;
+    text-align: center;
+  }
+}
+
 /* ================================================================================ */
